@@ -432,7 +432,7 @@ static PyObject* PyOpenFLUID_OpenProject(PyObject* self, PyObject* Args)
   }
   else
   {
-    PyErr_SetString(PyOpenFLUIDError, "Unable to open dataset");
+    PyErr_SetString(PyOpenFLUIDError, "Unable to open project");
     return NULL;
   }
 

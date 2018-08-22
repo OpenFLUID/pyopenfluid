@@ -1,7 +1,7 @@
 Overview
 ========
 
-This Package allows to load, parameterize, run and analyze OpenFLUID simulations from Python.
+This package allows to load, parameterize, run and analyze OpenFLUID simulations from Python.
 
 It is compatible with Python 3 and requires that the `OpenFLUID platform <https://www.openfluid-project.org/>`_ is already installed
 
