@@ -20,7 +20,7 @@ from setuptools.command.build_ext import build_ext
 
 
 name='PyOpenFLUID'
-patchVersion='20180726'
+patchVersion='20241211'
 cmakeBuildType='Release'
 
 
@@ -32,7 +32,7 @@ def detectOpenFLUIDVersion():
   try:
     Env = os.environ.copy()
     VersionStr = subprocess.check_output(["openfluid", "--version"],env=Env)
-    VersionStr = str(VersionStr, 'utf-8').strip(' \t\n\r').split('~')[0]
+    VersionStr = VersionStr.decode("utf-8").strip(' \t\n\r').split('~')[0]
 
     return(VersionStr)
   except OSError as e:

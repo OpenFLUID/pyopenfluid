@@ -42,8 +42,8 @@ class MainTest(unittest.TestCase):
   def testProjectSimulation(self):
     path = os.path.join(os.path.dirname(os.path.realpath(__file__)),"Generators.PRJ")
     pathOUT = os.path.join(os.path.dirname(os.path.realpath(__file__)),"Generators.PRJ","OUT")
-    data = OpenFLUID.openProject(path)
     OpenFLUID.setCurrentOutputDir(pathOUT)
+    data = OpenFLUID.openProject(path)
     self.assertRaises(Exception,OpenFLUID.runSimulation(data))
 
 
