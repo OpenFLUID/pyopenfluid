@@ -1,81 +1,67 @@
-Overview
-========
+# Overview
 
 This package allows to load, parameterize, run and analyze OpenFLUID simulations from Python.
 
-It is compatible with Python 3 and requires that the `OpenFLUID platform <https://www.openfluid-project.org/>`_ is already installed
+It is compatible with Python 3 and requires that the [OpenFLUID platform](https://www.openfluid-project.org/) is already installed
 
 *Currently, this package is in early development stage and has only be tested on Linux system*
 
 
-Installation
-============
+# Installation
 
-from PyPI
----------
+## from PyPI
 
 *TODO*
 
 
-from sources
-------------
+## from sources
 
 Classic installation (main usage)
 
-.. code-block:: shell
-
-    pip3 install .
+```shell
+pip3 install .
+```
 
 
 Installation linked to the current sources (usually for development purposes)
-
-.. code-block:: shell
-
-     pip3 install -e .
-
+```shell
+pip3 install -e .
+```
 
 
-Development
-===========
+
+# Development
 
 
 Run the following commands from the root of the sources tree.
 
 
-Check
------
+## Check
 
-.. code-block:: shell
-
-   python3 setup.py check
-
-
-Build
------
-
-.. code-block:: shell
-
-   python3 setup.py build
+```shell
+python3 setup.py check
+```
 
 
-Test
-----
+## Build
+```shell
+python3 setup.py build
+```
 
-.. code-block:: shell
+## Test
 
-   python3 setup.py build test
+```shell
+python3 setup.py build test
+```
+
+## Packaging
+
+```shell
+python3 setup.py sdist bdist
+```
 
 
-Packaging
----------
-
-.. code-block:: shell
-
-   python3 setup.py sdist bdist
-
-
-Misc resources
---------------
+# Misc resources
 
 * https://stackoverflow.com/questions/42585210/extending-setuptools-extension-to-use-cmake-in-setup-py
 
