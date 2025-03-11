@@ -20,7 +20,7 @@ from setuptools.command.build_ext import build_ext
 
 
 name='PyOpenFLUID'
-patchVersion='20241211'
+patchVersion='20250310'
 cmakeBuildType='Release'
 
 
@@ -98,6 +98,8 @@ setup(
   version=version,
   author='Jean-Christophe Fabre',
   author_email='jean-christophe.fabre@inra.fr',
+  maintainer='Armel Thöni',
+  maintainer_email='armel.thoni@inrae.fr',
   description='Python package for OpenFLUID',
   long_description='',
   url='https://www.openfluid-project.org/',
